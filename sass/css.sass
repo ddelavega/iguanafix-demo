@@ -1,0 +1,334 @@
+$iguanacolor: #3551AD
+$wht: #fff
+$blk: #000
+$lgh: #eee
+$lgr: #666
+$dgr: #202020
+$vdg: #181818
+$pnk: #ff3e84
+$opt: #5464C0
+$soc: #898989
+
+$fnt1: 'Raleway',sans-serif
+$fnt2: 'Poppins',sans-serif
+$fnt3: Arial,Helvetica,sans-serif
+$fnt4: 'Trebuchet MS', sans-serif
+
+*
+  box-sizing: border-box
+
+body
+  font-family: Verdana, sans-serif
+  margin: 0
+a
+  text-decoration: none
+  outline: none
+
+ul,li
+  list-style-type: none
+
+// NAVBAR
+.navbar
+  background-color: $iguanacolor
+  .navbar-brand
+    text-align: center
+    max-width: 220px
+    img
+      max-height: 46px
+      border: red !important
+.navbar-nav
+  .nav-link
+    color: $wht !important
+
+.navbar-toggler
+  border: 0
+  color: $wht !important
+  //background-color: green
+  padding: 0
+  margin: 0 0 0 0
+  line-height: 30px
+  //float: right
+  max-width: 40px
+.dropdown-menu
+  min-width: 260px
+  margin: 0
+  form
+    font-size: .9em
+  //  input::placeholder
+      font-size: .9em
+
+.phone
+  line-height: 50px
+  //max-width: 220px
+  font-family: Tahoma,Helvetica,Arial,sans-serif
+  font-size: 1.2em
+  color: $wht
+  text-align: center
+.breadcrumb
+  background-color: inherit
+  text-transform: uppercase
+  font-size: .7em
+  a
+    color: $lgr
+
+.form-group
+  a
+    text-decoration: none
+.btn-custom
+  max-width: 200px
+
+  background-color: rgba($pnk,.8)
+  color: $wht
+  border-radius: 30px
+  width: 70%
+  //box-shadow: 0 0 4px 0 rgba($blk,.6)
+  transition: .3s
+  &:hover
+    background-color: rgba($pnk,1)
+    box-shadow: 0 4px 10px -4px rgba($blk,.8)
+#navbarNavDropdown
+  button
+    display: block
+    margin: 0 auto
+    width: 70%
+.list
+  padding: 40px 0 20px
+  ul
+    color: $opt
+  .h6
+    font-family: $fnt4
+    font-weight: bold
+
+
+
+
+// SLIDER
+.prevgal
+  .mySlides
+    display: none
+    position: relative
+    height: 600px
+    max-width: 500px
+    //height: 450px
+    overflow: hidden
+
+    img
+      vertical-align: middle
+      height: 600px
+      width: 1280px !important
+      position: absolute
+      right: 0
+      line-height: 600px
+      text-align: right
+
+  .slideshow-container
+    max-width: 500px
+    height: 600px
+    //background-color: #999
+    border: 1px solid #ddd
+    position: relative
+    margin: auto
+    overflow: hidden
+    background-image: url("../loading.gif")
+    background-position: center
+    background-repeat: no-repeat
+    .next
+      right: 0
+    .prev,.next
+      margin-top: -22px
+      color: $wht
+      font-weight: bold
+      font-size: 2em
+      border-radius: 0 3px 3px 0
+      cursor: pointer
+      position: absolute
+      top: 50%
+      width: auto
+      padding: 16px
+      visibility: hidden
+    &:hover
+      .prev,.next
+        background-color: rgba($blk,.6)
+        color: $wht
+        transition: .3s
+        visibility: visible
+        &:hover
+          color: $wht
+
+.thumbgal
+  margin: 10px auto
+  a
+    display: inline-block
+    max-width: 64px
+    min-width: 64px
+    min-height: 80px
+    height: 80px
+    overflow: hidden
+    position: relative
+    margin: 4px
+    border: 1px solid $wht
+    transition: .3s
+    opacity: .4
+    img
+      display: block
+      height: 100%
+      position: absolute
+      right: 0
+
+  .active, .dot:hover
+    border: 1px solid $pnk !important
+    opacity: 1
+
+// PRODUCT, PRICE AND SELECT
+
+h2
+  font-family: $fnt3
+  font-weight: bold
+  font-size: 1.8em
+
+.h2
+  font-family: 'Open Sans',sans-serif
+  font-weight: bold
+  color: $pnk
+  &.price
+    line-height: 60px
+    font-size: 2.6em
+
+.custom-select
+  max-width: 300px
+  min-width: 220px
+.input-group
+  //line-height: 20px
+  //height: 20px
+  input
+    max-width: 80px
+
+  .qtyminus,.qtyplus
+    width: 40px
+// TABS
+.myTabs
+  display: none
+
+.tabs-container
+  margin: auto
+  border-top: 2px solid $lgh
+  padding: 40px 0
+  z-index: 0 !important
+
+.tabs-cont
+  a.tlinks
+    font-family: $fnt4
+    font-weight: bold
+    display: inline-block
+    margin: 4px 0 -2px
+    padding: 10px 12px
+    transition: .3s
+    text-decoration: none
+    border-bottom: 2px solid $lgh
+    color: $lgr
+  .activo, .tlinks:hover
+    color: $opt !important
+    border-bottom: 2px solid $opt !important
+    z-index: 2 !important
+
+
+// RELATED
+
+.related
+  max-width: 300px
+  padding: 40px 0 20px
+  .card
+    border: 0
+    border-radius: 0 0 4px 4px
+    transition: .3s
+    margin-bottom: 16px
+    &:hover
+      box-shadow: 0 4px 10px -4px rgba($blk,.8)
+  .desc
+    border-radius: 0 0 3px 3px
+    border: 1px solid $lgh
+    border-top: 0
+  h5
+    line-height: 30px
+    height: 60px
+    padding: 8px 8px 0
+    font-size: 1.1em
+    // /font-weight: bold
+
+  small
+    line-height: 22px
+    padding: 6px 8px 0
+    color: $pnk
+    font-family: $fnt3
+  p
+    padding: 6px 8px 0
+    font-size: .9em
+  img
+    width: 100%
+    display: block
+
+  .btn-custom-outline
+    color: $pnk !important
+    border: 2px solid $pnk !important
+    border-radius: 30px
+    font-size: .85em
+    padding: 4px 16px
+    text-transform: uppercase
+    &:hover
+      background-color: $pnk
+      color: $wht !important
+
+// FOOTER
+footer
+  background-color: $dgr
+  color: $wht
+  margin: 30px 0 0
+  padding: 10px 0 30px
+  .fnav
+    background-color: $dgr
+    border-bottom: 2px solid $vdg
+  .fnav-brand
+    display: inline-block
+    width: 100%
+  img
+    max-height: 50px
+    display: block
+  h5
+    border-bottom: 2px solid $opt
+    padding: 8px 0 4px
+    a
+      line-height: 40px
+      font-weight: bold
+      font-family: $fnt4
+      color: $wht
+      display: inline-block
+      width: 50%
+      border-bottom: 2px solid $opt
+      &:hover
+        color: $wht
+        text-decoration: none
+  ul
+    padding: 4px 0
+    font-size: .9em
+    li
+      a
+        color: $wht
+        line-height: 30px
+        &:hover
+          text-decoration: none
+          color: $opt
+  .social
+    display: inline-block
+    i
+      line-height: 30px
+      color: $soc
+      margin: 4px
+
+
+
+@media (max-width: 570px)
+  .btn-custom
+
+    max-width: 200px
+    display: block
+    margin: 10px auto
